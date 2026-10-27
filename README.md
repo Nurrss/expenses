@@ -10,7 +10,15 @@
 python expense_tracker.py expenses.csv
 ```
 
-На некоторых системах используйте `python3` вместо `python`. Пока шаблон выводит только сообщение о заготовке: реализуйте функции в `expense_tracker.py`.
+На некоторых системах используйте `python3` вместо `python`.
+
+Если установлен [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv run expense_tracker.py expenses.csv
+```
+
+Вместо `expenses.csv` можно передать путь к любому CSV-файлу в том же формате.
 
 CSV сохранён в UTF-8. Формат: заголовок `date,category,amount`, дата `YYYY-MM-DD`, сумма с точкой в качестве десятичного разделителя. Используйте модуль `csv` стандартной библиотеки.
 
